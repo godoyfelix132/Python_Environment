@@ -1,0 +1,23 @@
+import numpy as np
+
+
+M_1D = np.array([1, 2, 3])
+M_1D_mod = np.append(M_1D, 5)
+M_2D = np.array([(1, 2, 3), (4, 5, 6)])
+print('1D_Matrix:\n', M_1D)
+print('M_1D_mod:\n', M_1D_mod)
+print('2D_Matrix:\n', M_2D)
+M_range = np.arange(0, 30, 5)
+M_space = np.linspace(0, 2, 5)
+print('Range (init, end, step):\n', M_range)
+print('LineSpace (init, end, points):\n', M_space)
+print('Dimension:', M_2D.ndim)
+print('Data type:', M_2D.dtype)
+print('N data:', M_2D.size)
+print('Shape:', M_2D.shape)
+print('Get column:', M_2D[:, 2])
+print('Get row:', M_2D[1, :])
+print('Min:', M_2D.min())
+print('Max:', M_2D.max())
+print('Sum:', M_2D.sum())
+print('Standard Deviation:', M_2D.std())
